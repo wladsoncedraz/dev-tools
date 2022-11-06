@@ -6,7 +6,6 @@ Project aimed at gathering examples of use of some tools used throughout .Net de
 - Serializer and Deserializar XML to Objects and Reverse
 
 ## Useful commands in dotnet CLI
-Commands
 
 ```bash
   dotnet new [template] --output [nameproject]

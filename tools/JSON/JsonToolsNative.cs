@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 namespace tools.JSON;
 public class JsonToolsNative
 {
-    public async Task<string> ConvertObjectToJSON(object objectSerializable)
+    public static async Task<string> ConvertObjectToJSON(object objectSerializable)
     {
         if (objectSerializable == null)
             throw new ArgumentNullException(nameof(objectSerializable));
@@ -29,7 +29,7 @@ public class JsonToolsNative
 
         return objectJSON;
     }
-    public async Task<T> ConvertJSONToObject<T>(string jsonObjectDeserializable)
+    public static async Task<T> ConvertJSONToObject<T>(string jsonObjectDeserializable)
     {
         if (string.IsNullOrEmpty(jsonObjectDeserializable))
             throw new ArgumentNullException(nameof(jsonObjectDeserializable));
