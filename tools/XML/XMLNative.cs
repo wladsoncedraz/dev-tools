@@ -46,7 +46,7 @@ namespace tools.XML
             }
             catch (Exception ex)
             {
-                throw new Exception($"Error trying convert object to XML. Message: {ex.Message}");
+                throw new Exception($"Error trying convert XML to object. Message: {ex.Message}");
             }
         }
     }
